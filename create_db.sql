@@ -1,3 +1,5 @@
+ALTER USER postgres WITH PASSWORD 'temp123!';
+
 DROP TABLE IF EXISTS public.schedule;
 DROP TABLE IF EXISTS public.bus;
 DROP TABLE IF EXISTS public.driver;

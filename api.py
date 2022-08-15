@@ -21,18 +21,6 @@ from marshmallow import (
     ValidationError,
 )
 
-
-
-# namespace = Namespace('bus_schedule', 'bus schedule endpoints')
-
-# bus_schedule_model = namespace.model('bus_schedule', {
-#     'message': fields.String(
-#         readonly=True,
-#         description='Bus Schedule API'
-#     )
-# })
-
-
 app = Flask(__name__)
 
 api = Api(app)
@@ -42,7 +30,7 @@ app.config['SWAGGER'] = {
 }
 swag = Swagger(app)
 
-db = pw.PostgresqlDatabase('BUS_SCHED', host='localhost', port=5432, user='postgres', password='temp123!')
+db = pw.PostgresqlDatabase('postgres', host='localhost', port=5432, user='postgres', password='temp123!')
 
 
 ###### MODELS #####
