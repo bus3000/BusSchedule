@@ -13,3 +13,8 @@ sudo apt-get install python-is-python3 python3-pip postgresql -y
 pip install asyncio psycopg2 flask flask-restful flasgger peewee marshmallow 
 ```
 
+## populate postgres db
+
+```
+sudo -u postgres psql < create_db.sql
+```
